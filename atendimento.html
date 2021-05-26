@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria - Centra de ajuda</title>
+     <!--Links pra fontes e o CSS-->
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+     
+     <style>
+    *{
+        box-sizing: border-box;
+    }
+    .galerry{
+        border: 1px solid #d4d4d4;
+        box-shadow: 0 0 1em rgb(90, 90, 89);
+        box-sizing: border-box; 
+        max-width: 100%;
+    }
+    .galerry img{ /*dimensão das fotos*/
+        max-width: 100% center;
+        width: 100%;
+        height: 100% ;
+    }
+    .des{
+        padding: 2%;
+        text-align: center;
+        color: #000000;
+        font-size: 15px;
+        font-family: sans-serif;
+
+    }
+    .responsive{
+        padding: 50px; /* muda a posição das imagens*/
+        float: left;
+        width: 25%; /*largura das divs*/
+        max-width: 100%;
+    }
+    list-style: none;
+    .galerry{
+    
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 500px;
+        border: 1px solid #5dc2f1;
+        background-color: #0c0c0c;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0,.4);
+        -webkit-transition: all .4s ease-in;
+    }
+    .galerry:hover{
+        -webkit-transform: scale(1.1);  /*isto dar o efeito de zoom nos produtos*/
+    }
+    @media only screen and(max-width: 2000px){
+        .responsive{
+            width: 50%;
+            margin: 6px 0;
+        }
+    }
+    @media only screen and(max-width: 2000px){
+        .responsive{
+            width: 100%;
+        
+        }
+    }
+
+    body{
+        background-color:#ffffff;
+        background-image: url(./img/fundo03.jpg);
+        
+    }
+    h1{
+        font-family: 'logo',sans-serif; 
+        color: #aab1b4;
+        text-align: center;
+        padding: 8pt;
+    }
+    @font-face{
+        font-family: 'logo';                       /*modo de colar fonts do google*/
+        src: url(".//fonts/ConcertOne-Regular.ttf");
+
+    }
+    h4{
+        text-align: center;
+        color: #101c24;
+        font-size: small;
+      
+    }
+    p{
+        color: #74797a;
+        text-align: center;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    .end{
+        color:  #101c24;
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+ 
+  
+     </style>
+</head>
+<body>
+ <!--Parte de cima da página (Onde tem logo e os links pra outras páginas)-->
+ <header>
+    <!--Logo-->
+    <div class="logo-flex">
+        <img src="./img/logo.png" alt="logo">
+    </div>
+    <!--Links pra outras páginas-->
+    <nav class="nav-header">
+        <ul class="nav-ul">
+            <li ><a href="./index.html" class="nav-li">Página Inicial</a></li>
+            <li ><a href="./produtos.html" class="nav-li">Livros</a></li>
+            <li ><a href="./ofertas.html" class="nav-li">Ofertas</a></li>
+            <li ><a href="./atendimento.html" class="nav-li">Atendimento e Televendas</a></li>
+        </ul>
+    </nav>
+    <!--Botões de Usuário e Carrinho-->
+    <nav class="user-nav">
+        <ul class="user-ul">
+            <li class="user-cart">
+                <img src="./img/carrinho.png" alt="">
+                <div id="shopping-cart">
+                    <table id="cart-content" class="shopping-cart-css">
+                        <thead>
+                            <th>PRODUTO</th>
+                            <th>NOME</th>
+                            <th>PREÇO</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </br>
+                        <a href="#" id="clear-cart" class="button-clean-cart">Limpar Carrinho</a>
+                        
+            </br>
+        </br>
+                        <button onclick="buyNow()" id="buy-now" class="button-clean-cart">Comprar Agora</button>
+                       
+                </div>    
+            </li>
+            <li><a href="./php/login.php" class="user-user"><img src="./img/user01.png" alt="" ></a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Como podemos ajudar?</h1>
+   
+    <div id="courses-list">
+            <div class="responsive">
+            <div class="galerry">
+                <img src="./img/email_blue.png" width="500" height="500">
+                <h4>E-mail</h4>
+                <p>Envie seu e-mail para nossa equipe</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="galerry">
+            <img src="./img/telefone.png" width="500" height="500">
+            <h4>Telefone<h4>
+            <h4>(11) 3056-7070</h4>
+            <p>  Segunda à sábado - 9h às 18h</p>
+           
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="galerry">
+                <img src="./img/mapa.png" width="500" height="500">
+
+                <h4>
+                    <a class="end" href="https://www.google.com.br/maps/place/Shopping+Interlagos/@-23.6764362,-46.6782658,17z/data=!4m12!1m6!3m5!1s0x94ce501ac3b77f8f:0xdaa230261180506a!2sShopping+Interlagos!8m2!3d-23.6764362!4d-46.6782658!3m4!1s0x94ce501ac3b77f8f:0xdaa230261180506a!8m2!3d-23.6764362!4d-46.6782658">Conferir nosso endereço</a> 
+                
+                </h4>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="galerry">
+            <img src="./img/televendas.png" width="500" height="500">
+
+            <h4>Televendas</h4>
+            <h4>(11) 3056-4320</h4>
+            <p>Segunda à sábado - 9h às 18h</p> 
+                
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>

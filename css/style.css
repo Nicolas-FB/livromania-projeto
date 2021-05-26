@@ -1,0 +1,590 @@
+*   
+{
+    margin: 0; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body    {font-family: 'Montserrat', sans-serif;}
+
+.quemSomosBody
+{
+      margin-top: 70px;
+      text-align: center;
+      line-height: normal;
+      font-size: x-large;
+}
+
+h2
+{
+   font-size: 48px;
+   margin-top: 40px;
+   text-align: center;
+   line-height: normal;
+}
+
+header
+{
+    display: flex;
+    
+    width: 100%;
+    height: 10vh;
+    background: #4be0eb;
+    align-items: center;
+    
+}
+
+.logo-flex
+{
+    margin-top: auto;
+    margin-left: 50px;
+    display: flex;
+    flex: .2;
+    
+}
+
+.nav-header
+{
+    flex: 2;
+}
+.nav-ul 
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.nav-li
+{
+    text-decoration: none; 
+    color:  #000000; 
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+    
+}
+
+.user-nav
+{
+    flex: .2;
+}
+
+.user-ul
+{
+    display: flex;
+    list-style-type: none;
+    margin-right: 10px;
+}
+.user-cart
+{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.user-user
+{
+    text-decoration: none;
+}
+
+.user-cart
+{
+    position: relative;
+}
+
+.user-cart #shopping-cart 
+{
+    display: none;
+}
+
+.user-cart:hover #shopping-cart
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    animation: drop .2s ease;
+    z-index: 1;
+    background: #4be0eb;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 400px;
+    text-align: center;
+    color: black;
+    align-items: center;
+    border: solid gold;
+    border-width: 0px 0px 2px 0px;
+
+}
+
+.user-cart-css
+{
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #0e0e0e; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+  .button-clean-cart{
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: black;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-sizing: border-box; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  .button:focus,
+  button:focus,
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+    color: black;
+    border-color: #888;
+    outline: 0; }
+  .button.button-primary,
+  button.button-primary,
+  input[type="submit"].button-primary,
+  input[type="reset"].button-primary,
+  input[type="button"].button-primary {
+    color: #FFF;
+    background-color: black;
+    border-color: black; }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: black;
+    border-color: black; }
+
+  @keyframes drop
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    
+}
+
+section
+{
+    width: 100%;
+    height: 21em;
+    display: flex;
+    border: solid gold;
+    border-width: 0px 0px 2px 0px;
+    background: rgb(255, 255, 255);
+    max-width: 100%;
+}
+
+#slider
+{
+    overflow: hidden;
+}
+
+#slider figure
+{
+    position: relative;
+    width: 200%;
+    height: 200%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+    
+    
+}
+
+#slider figure img
+{
+    float: left;
+}
+
+@keyframes slider
+{
+    0%      {left: 0;}
+    45%     {left: 0;}
+    50%     {left: -100%;}
+    95%     {left: -100%;}
+    
+}
+
+main    {font-family: 'Viga', sans-serif;}
+
+main h1 {font-size: 3em; text-align: center; margin-top: 10px;}
+
+form
+{
+    display: flex;
+    flex: 1;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+  border: solid gold;
+  border-width: 2px 0px 0px 0px;
+  background: #4be0eb;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+}
+
+.footer > *
+{
+  flex: 1 100%;
+}
+.footer-left
+{
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer-left p
+{
+  text-align: justify;
+}
+
+.img_Footer
+{
+  width: 50%;
+}
+.footer ul
+{
+  list-style: none;
+  padding-left: 0;
+}
+.footer li
+{
+  line-height: 2em;
+}
+.footer a
+{
+  text-decoration: none;
+}
+.footer-right
+{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-right > *
+{
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+.box a
+{
+
+  color: #000;
+}
+.footer-bottom
+{
+  text-align: center;
+  padding-top: 10px;
+}
+.footer-left p
+{
+  padding-right: 20%;
+}
+.socials a
+{
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.socials img 
+{
+  width: 100%;
+}
+*,*:before,*:after
+{
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-right > *{flex: 1;}
+
+  .footer-right{flex: 2 0px;}
+
+  .footer-left{flex: 1 0px;}
+}
+
+@media (max-width: 600px)
+{
+  .footer{padding: 15px;}
+
+  main{font-size: 55px;}
+}
+
+#logo-container
+{
+    width: 10%;
+    margin-left: 1vh;
+    display: flex;
+}
+
+.logo 
+{
+    margin-top: 1vh;
+}
+
+.redes
+{
+    width: 12%;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    list-style-type: none;
+    color: black;
+}
+.redes img
+{
+    width: 20%;
+}
+
+.curiosidades
+{
+    vertical-align: sub;
+    width: 30%;
+    height: 30vh;
+    margin-left: 13%;
+    margin-top: -32vh;
+    text-align: center;
+
+}
+
+.curiosidades h1, p
+{
+    color: black;
+}
+
+.veja-produtos
+{
+    color: black;
+    text-decoration: none;
+}
+
+.email
+{
+    margin-left: 43.5%;
+    margin-top: -31.5vh;
+    width: 30%;
+    height: 32vh;
+    text-align: center;
+    color: black;
+    
+}
+
+.email img
+{
+    width: 45%;
+    height: 50%;
+}
+
+.email ul
+{
+    list-style-type: none;
+}
+
+.pagamento
+{
+    width: 26%;
+    height: 10vh;
+    margin-top: -32vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fale-conosco
+{
+    width: 26%;
+    height: 22vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fale-conosco img   {margin-top: 2vh;}
+
+
+
+.gabinetebranco{
+    position: absolute;
+    left: 10px;
+  
+  }
+  
+  .drivebranco{
+  position: absolute;
+  left: 300px;
+  display: inline-block; 
+   
+  }
+  
+  .notebook{
+    position: absolute;
+    left: 700px;
+  
+  }
+  
+  main {
+      margin: 0 auto;
+      width: 980px;
+      height: 650px;    
+      position: relative;
+      padding: 0px;
+  }
+  
+  
+  
+  hr{
+    position: relative;
+    top: 300px;
+  }
+  
+  .span-pedidos{
+    position: relative;
+    top: 300px;
+    font-family: 'Viga', sans-serif;
+    font-size: 17px;
+  }
+  
+  h5{
+    position: relative;
+    top: 280px;
+  }
+  
+  .nvidia{
+    position: relative;
+    top: 300px;
+  }
+  
+  .amd{
+    position: absolute;
+    top: 502px;
+    left: 100px; 
+  
+  }
+  
+  .intel{
+    position: absolute;
+    top: 502px;
+    left: 200px; 
+  
+  }
+  
+  .asus{
+    position: absolute;
+    top: 502px;
+    left: 300px; 
+  
+  }
+  
+  .correios{
+    position: absolute;
+    top: 410px;
+    left: 80px;
+  }
+  
+  
+  .casa{
+    position: absolute;
+    top: 390px;
+    left: 930px;
+  }
+  
+  .correios:active{
+    position: absolute;
+    left: 930px;
+    z-index: 4;
+  
+  }
+  .correios:active,.correios{
+    transition: all 2s linear;  
+    -webkit-transition : all 2s linear;
+    -moz-transition: all 2s linear;
+    -o-transition:all 2s linear;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .column {
+    float: left;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  
+  .middle {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
