@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.galerry{
+    border: 1px solid #235a80;
+    box-shadow: rgb(7, 7, 7);
+    box-sizing: border-box; 
+    max-width: 100%;
+   
+
+}
+.galerry img{ /*dimensão das fotos*/
+    max-width: 1000px;
+    width: 100%;
+    height: 100% ;
+}
+.des{
+    padding: 2%;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    font-family: sans-serif;
+
+
+  
+}
+.responsive{
+    padding: 10px; /* muda a posição das imagens*/
+    float: left;
+    width: 20%; /*largura das divs*/
+    max-width: 100%;
+
+}
+  
+list-style: none;
+
+.galerry{
+ 
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 500px;
+    border: 1px solid #5dc2f1;
+    background-color: #0c0c0c;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0,.4);
+    -webkit-transition: all .4s ease-in;
+}
+.galerry:hover{
+    -webkit-transform: scale(1.1);  /*isto dar o efeito de zoom nos produtos*/
+}
+@media only screen and(max-width: 2000px){
+    .responsive{
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+@media only screen and(max-width: 2000px){
+    .responsive{
+        width: 100%;
+      
+    }
+}
+
+body{
+    background-color:#f1ebeb;
+    background-image: url(./img/fundo03.jpg);
+    
+}
+h1{
+    color: #080808;
+    text-align: center;
+    font-size:  30PX;
+    padding: 20pt;
+    
+}
+h3{
+    color: #d38d23;
+    text-align: center;
+    font-size: 15px;
+    
+    
+}
+.price{
+    text-align: center;
+    font-weight: bold;
+    color: #121fdb; 
+}
+
+.oferta
+{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.button-add-cart
+{
+    background-color: #ffe608;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

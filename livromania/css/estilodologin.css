@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .div1{
+      margin: 5px;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+  }
+  
+  body {
+    background-color: #1eb1aa;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    color: black;
+  }
+  
+  form {
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 5px;
+  }
+  
+  form .input-block {
+    margin-bottom: 20px;
+  }
+  
+  form .input-block label {
+    font-size: 14px;
+    color: rgb(243, 146, 19);
+  }
+  
+  form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 16px;
+    color: #dc520d;
+    border-radius: 2px;
+    border: 1px solid #ccddef;
+    outline-color: #84beda;
+  }
+  
+  form .btn-login {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #e19730;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+  }
+ 
+  /*Aparicao suave do formulario*/
+
+  form {
+    overflow: hidden;
+    animation: fade 0.3s;
+  }
+
+  form .input-block:nth-child(1){
+    animation: move 600ms;
+  }
+
+  form .input-block:nth-child(2){
+    animation: move 500ms;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+  }
+
+  form .btn-login {
+    animation: move 500ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+
+    to [
+      opacity: 1;
+      transform:scale(1);
+    ]
+  }
+
+  
+
+
+  
+ /*Animacao final*/
+
+.squares li {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(218, 38, 38);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  animation: up 2s infinite alternate;
+  animation-direction: alternate;
+  z-index:-1
+}
+  
+
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-800px) rotate(960deg);
+  }
+}
+ 
