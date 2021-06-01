@@ -1,5 +1,3 @@
-<? php
-
-include_once("main.html");
-
+<?php 
+header("Location: /main.html"); 
 ?>
