@@ -20,7 +20,7 @@ session_start();
 
 			mysqli_query($con, $query);
 
-			header("Location: ./index.php");
+			header("Location: index.php");
 			die;
 		}else
 		{
