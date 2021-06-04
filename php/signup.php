@@ -20,7 +20,7 @@ session_start();
 
 			pg_query($con, $query);
 
-			header("Location: ./login.php");
+			header("Location: login.php");
 			die;
 		}else
 		{
