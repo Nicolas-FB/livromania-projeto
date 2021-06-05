@@ -18,7 +18,7 @@ session_start();
 			$query = "insert into users (NULL,user_id,user_name,password) values (':user_id',':user_name',':password')";
 
 			pg_query($con, $query);
-			echo $message;
+			echo "Porra";
 			header("Location: login.php");
 			die;
 		}else
