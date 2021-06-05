@@ -5,10 +5,10 @@
 
 if (!$con) 
    {
-     echo "Database connection failed.";
+     //echo "Database connection failed.";
    }
    else 
    {
-     echo "Database connection success.";
+     //echo "Database connection success.";
    }
 ?>
