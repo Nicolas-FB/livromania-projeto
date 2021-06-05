@@ -7,8 +7,6 @@ session_start();
 	if (isset($_POST['Submit']))
 	//if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
-		error_reporting(E_ALL);
-
 		//something was posted
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
@@ -23,12 +21,10 @@ session_start();
 			pg_query($con, $query);
 
 			header("Location: login.php");
-			echo $sql3;
 			die;
 		}else
 		{
 			echo "Informações inválidas.";
-			echo $sql3;
 			exit; // to prevent execution
 		}
 	}
