@@ -19,13 +19,12 @@ session_start();
 			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
 
 			pg_query($con, $query);
-
+			echo $message;
 			header("Location: login.php");
 			die;
 		}else
 		{
 			echo "Informações inválidas.";
-			exit; // to prevent execution
 		}
 	}
 ?>
