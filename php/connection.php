@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "login_livromania";
+$dbhost = "sql10.freemysqlhosting.net";
+$dbuser = "sql10417368";
+$dbpass = "IPF9gv1jIf";
+$dbname = "sql10417368";
 
 if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
 {
