@@ -4,8 +4,8 @@ session_start();
 	include("connection.php");
 	include("functions.php");
 
-
-	if($_SERVER['REQUEST_METHOD'] == "POST")
+	if (isset($_POST['Submit']))
+	//if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
 		$user_name = $_POST['user_name'];
