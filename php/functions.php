@@ -9,7 +9,7 @@ function check_login($con)
 		$id = $_SESSION['user_id'];
 		$query = "select * from users where user_id = '$id' limit 1";
 
-		$result = pg_query($con,$query);
+		$result = pg_query($con,$query)
 		if($result && pg_num_rows($result) > 0)
 		{
 
