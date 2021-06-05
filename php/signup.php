@@ -24,7 +24,6 @@ session_start();
 
 			header("Location: login.php");
 			echo $sql3;
-			exit; // to prevent execution
 			die;
 		}else
 		{
