@@ -14,7 +14,7 @@ session_start();
 		{
 
 			//save to database
-			$user_id = random_num(20);
+			//$user_id = random_num(20);
 			$query = sprintf("insert into users (NULL,user_id,user_name,password) values (':user_id',':user_name',':password')");
 
 			pg_query($con, $query);
