@@ -4,7 +4,7 @@ session_start();
 	include("connection.php");
 	include("functions.php");
 
-	if($_SERVER['REQUEST_METHOD'] == "POST")
+	if(isset($_POST['Submit']) and $_SERVER['REQUEST_METHOD']=="POST")
 	{
 		//something was posted
 		$user_name = $_POST['user_name'];
@@ -15,7 +15,7 @@ session_start();
 
 			//save to database
 			$user_id = random_num(20);
-			$query = "insert into users (NULL,user_id,user_name,password) values (':user_id',':user_name',':password')";
+			$query = sprintf("insert into users (NULL,user_id,user_name,password) values (':user_id',':user_name',':password')");
 
 			pg_query($con, $query);
 			echo "Porra";
