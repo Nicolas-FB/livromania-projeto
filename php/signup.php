@@ -16,7 +16,7 @@ session_start();
 
 			//save to database
 			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+			$query = "insert into users (user_id,user_name,password) values (':user_id',':user_name',':password')";
 
 			pg_query($con, $query);
 			echo $message;
