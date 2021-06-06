@@ -1,7 +1,3 @@
-<?php
-
-session_start();
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -73,7 +69,15 @@ session_start();
         <!--Parte principal da página (Parte dos produtos)-->
         <main>
 	
-            <h1><?php echo "Olá," . $_SESSION['user_name'];?></h1>
+            <h1><?php 
+		    session_start();
+		    if($_SESSION['user_name']){
+		    echo "Olá," . $_SESSION['user_name'];
+		    }else
+		    {
+		    echo "Produtos em destaque";
+		    }
+		    ?></h1>
             <br>
             <div id="courses-list" class="container">
                 <div class="row">
