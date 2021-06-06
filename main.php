@@ -73,7 +73,7 @@ session_start();
         <!--Parte principal da página (Parte dos produtos)-->
         <main>
 	
-            <h1>Olá <?php echo "Olá," . $_SESSION["user_name"]?></h1>
+            <h1>Olá <?php echo "Olá," . $_SESSION['user_name']?></h1>
             <br>
             <div id="courses-list" class="container">
                 <div class="row">
