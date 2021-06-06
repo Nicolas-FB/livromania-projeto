@@ -71,8 +71,9 @@
 	
             <h1><?php 
 		    session_start();
-		    if($_SESSION['user_name']){
-		    echo "Olá," . $_SESSION['user_name'];
+		    if($_SESSION['user_name'])
+		    {
+		    echo "Olá, " . $_SESSION["user_name"];
 		    }else
 		    {
 		    echo "Produtos em destaque";
