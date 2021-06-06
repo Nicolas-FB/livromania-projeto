@@ -1,0 +1,4 @@
+HOST: https://www.freemysqlhosting.net/account/
+ACESSAR DATABASE: http://www.phpmyadmin.co
+USERNAME: sql10417368
+PASSWORD: IPF9gv1jIf
