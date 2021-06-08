@@ -77,7 +77,7 @@
 		    
 		    if($_SESSION['user_name'])
 		    {
-		    echo "Olá, " . $row['user_name'];
+		    echo "Olá, " . $_SESSION['user_name'];
 		    }
 		    ?></h1>
             <br>
