@@ -72,6 +72,9 @@
             <h1><?php 
 		    session_start();
 		    
+		    include("connection.php");
+	            include("functions.php");
+		    
 		    $_SESSION['user_name'] = $username;
 		    
 		    echo "Olá, " $username;
