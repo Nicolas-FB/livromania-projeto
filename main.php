@@ -77,7 +77,7 @@
 		    
 		    $_SESSION['user_name'] = $username;
 		    
-		    echo "Olá, " $username;
+		    echo "Olá, " . $username;
 		    
 		    ?></h1>
             <br>
