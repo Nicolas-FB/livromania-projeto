@@ -72,9 +72,6 @@
             <h1><?php 
 		    session_start();
 		    
-		    include("connection.php");
-		    include("functions.php");
-		    
 		    echo "Olá, " $_SESSION['user_name'];
 		    
 		    ?></h1>
