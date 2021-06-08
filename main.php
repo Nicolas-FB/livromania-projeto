@@ -71,6 +71,10 @@
 	
             <h1><?php 
 		    session_start();
+		    
+		    include("connection.php");
+		    include("functions.php");
+		    
 		    if($_SESSION['user_name'])
 		    {
 		    echo "Olá, " . $_SESSION["user_name"];
