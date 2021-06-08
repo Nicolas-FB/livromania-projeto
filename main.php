@@ -75,10 +75,7 @@
 		    include("connection.php");
 		    include("functions.php");
 		    
-		$username = $row['user_name'];
-		    
-		    
-		    echo "Olá, " $username;
+		    echo "Olá, " $_SESSION['user_name];
 		    
 		    ?></h1>
             <br>
