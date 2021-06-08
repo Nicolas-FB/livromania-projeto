@@ -75,10 +75,14 @@
 		    include("connection.php");
 		    include("functions.php");
 		    
-		    if($_SESSION['user_name'])
-		    {
-		    echo "Olá, " . $_SESSION['user_name'];
-		    }
+		$user = $_POST['user_name'];
+		$query = "SELECT * FROM users WHERE user_name ='$user'"
+		$row = mysql_fetch_array($query);
+		$username = $row['user_name'];
+		    
+		    
+		    echo "Olá, " $username;
+		    
 		    ?></h1>
             <br>
             <div id="courses-list" class="container">
