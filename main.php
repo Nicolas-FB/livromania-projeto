@@ -72,7 +72,7 @@
             <h1><?php 
 		    session_start();
 		    
-		    echo "Olá, " $_SESSION['user_name'];
+		    echo "Olá, asdasd";
 		    
 		    ?></h1>
             <br>
