@@ -75,7 +75,7 @@
 		    include("connection.php");
 		    include("functions.php");
 		    
-		    echo "Olá, " $_SESSION['user_name];
+		    echo "Olá, " $_SESSION['user_name'];
 		    
 		    ?></h1>
             <br>
