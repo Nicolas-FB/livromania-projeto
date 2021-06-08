@@ -78,9 +78,6 @@
 		    if($_SESSION['user_name'])
 		    {
 		    echo "Olá, " . $row['user_name'];
-		    }else
-		    {
-		    echo "Produtos em destaque";
 		    }
 		    ?></h1>
             <br>
