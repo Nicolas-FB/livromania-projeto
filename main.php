@@ -75,9 +75,6 @@
 		    include("connection.php");
 		    include("functions.php");
 		    
-		$user = $_POST['user_name'];
-		$query = "SELECT * FROM users WHERE user_name ='$user'"
-		$row = mysql_fetch_array($query);
 		$username = $row['user_name'];
 		    
 		    
