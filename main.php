@@ -77,7 +77,14 @@
 		    
 		    $_SESSION['user_name'] = $username;
 		    
-		    echo "Olá, " . $username;
+		    if($_SESSION['user_name'])
+		    {
+		    	echo "Olá, " . $username;
+		    }else
+		    {
+		    	echo "Produtos em destaque";
+		    }
+		    
 		    
 		    ?></h1>
             <br>
