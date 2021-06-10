@@ -19,7 +19,7 @@ function check_login($con)
 	}
 
 	//redirect to login
-	header("Location: main.php");
+	header("Location: ../main.php");
 	die;
 
 }
