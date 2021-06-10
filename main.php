@@ -1,5 +1,11 @@
-<?php
-session_start(); // Right at the top of your script
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -72,15 +78,15 @@ session_start(); // Right at the top of your script
         <!--Parte principal da página (Parte dos produtos)-->
         <main>
 	
-            <h1><?php 
+            <h1>
+		    Olá,
+		    <?php 
 		    
-		    include("connection.php");
-	            include("functions.php");
+		    echo $user_data['user_name'];
 		    
-		    echo $_SESSION["user_name"];
-		    
-		    
-		    ?></h1>
+		    ?>
+		     temos novidades para você!
+		</h1>
             <br>
             <div id="courses-list" class="container">
                 <div class="row">
