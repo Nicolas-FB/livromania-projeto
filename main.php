@@ -75,11 +75,11 @@
 		    include("connection.php");
 	            include("functions.php");
 		    
-		    $_SESSION['user_name'] = $username;
+		    $query = "select * from users where user_name = '$user_name'";
 		    
-		    if($_SESSION['user_name'])
+		    if($_SESSION[$query])
 		    {
-		    	echo "Olá, " . $username;
+		    	echo "Olá, " . $query;
 		    }else
 		    {
 		    	echo "Produtos em destaque";
