@@ -1,3 +1,4 @@
+/*
 <?php 
 session_start();
 
@@ -7,6 +8,7 @@ session_start();
 	$user_data = check_login($con);
 
 ?>
+*/
 <!DOCTYPE html>
 <html>
     <head>
@@ -77,11 +79,11 @@ session_start();
         </section>
         <!--Parte principal da página (Parte dos produtos)-->
         <main>
-		<!--
+		
             <h1>
 		    Hello, <?php echo $user_data['user_name']; ?>
 		</h1>
-		-->
+		
             <br>
             <div id="courses-list" class="container">
                 <div class="row">
