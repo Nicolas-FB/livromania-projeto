@@ -77,15 +77,7 @@ session_start(); // Right at the top of your script
 		    include("connection.php");
 	            include("functions.php");
 		    
-		    $query = "select * from users where user_name = '$user_name'";
-		    
-		    if($_SESSION[$query])
-		    {
-		    	echo "Olá, " . $query;
-		    }else
-		    {
-		    	echo "Produtos em destaque";
-		    }
+		    echo $_SESSION["user_name"];
 		    
 		    
 		    ?></h1>
