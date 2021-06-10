@@ -5,7 +5,7 @@ session_start();
 	include('../php/functions.php');
 	include('../php/login.php');
 
-	//$user_data = check_login($con);
+	$user_data = check_login($con);
 
 ?>
 <!DOCTYPE html>
