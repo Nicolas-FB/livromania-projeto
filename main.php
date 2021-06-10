@@ -79,13 +79,7 @@ session_start();
         <main>
 	
             <h1>
-		    Olá,
-		    <?php 
-		    
-		    echo $user_data['user_name'];
-		    
-		    ?>
-		     temos novidades para você!
+		    Hello, <?php echo $user_data['user_name']; ?>
 		</h1>
             <br>
             <div id="courses-list" class="container">
