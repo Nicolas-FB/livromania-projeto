@@ -81,7 +81,7 @@ session_start();
         <main>
 		
             <h1>
-		    echo 'Olá ' . $user_data . ', temos novidades para você!'
+		 <?php   echo 'Olá ' . $user_data . ', temos novidades para você!' ?>
 		</h1>
 		
             <br>
