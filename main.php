@@ -1,3 +1,6 @@
+<?php
+session_start(); // Right at the top of your script
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,7 +73,6 @@
         <main>
 	
             <h1><?php 
-		    session_start();
 		    
 		    include("connection.php");
 	            include("functions.php");
