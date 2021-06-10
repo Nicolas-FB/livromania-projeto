@@ -5,7 +5,7 @@ session_start();
 	include('./php/connection.php');
 	include('./php/functions.php');
 
-	$user_data = check_login($con);
+	$user_data = $_SESSION['user_name'];
 
 ?>
 
@@ -81,7 +81,7 @@ session_start();
         <main>
 		
             <h1>
-		    Hello, 
+		    echo 'Olá ' . $user_data . ', temos novidades para você!'
 		</h1>
 		
             <br>
