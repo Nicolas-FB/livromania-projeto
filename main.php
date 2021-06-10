@@ -5,7 +5,7 @@ session_start();
 	include('./php/connection.php');
 	include('./php/functions.php');
 
-	$user_data = $_SESSION['user_name'];
+	$_SESSION['user_name'] = $user_data;
 
 ?>
 
