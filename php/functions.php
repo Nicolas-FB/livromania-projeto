@@ -1,6 +1,6 @@
 <?php
 
-function check_login($con)
+function check_login($user_id)
 {
 
 	if(isset($_SESSION['user_id']))
