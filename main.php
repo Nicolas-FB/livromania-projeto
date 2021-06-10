@@ -81,7 +81,7 @@ session_start();
         <main>
 		
             <h1>
-		    Hello, <?php echo $user_data['user_name']; ?>
+		    Hello, 
 		</h1>
 		
             <br>
