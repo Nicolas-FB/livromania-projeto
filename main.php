@@ -81,7 +81,7 @@ session_start();
         <main>
 		
             <h1>
-		 <?php echo $_SESSION['user_name']; ?>
+		 <?php echo "Olá " . $_SESSION['user_name']; ?>
 		</h1>
 		
             <br>
