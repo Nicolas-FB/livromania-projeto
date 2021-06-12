@@ -81,7 +81,7 @@ session_start();
         <main>
 		
             <h1>
-		 <?php   echo $user_data; ?>
+		 <?php echo $_SESSION['user_name']; ?>
 		</h1>
 		
             <br>
