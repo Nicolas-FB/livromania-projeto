@@ -1,14 +1,14 @@
 <?php
 
 
-function check_login($user_name)
+function check_login($con)
 {
 
-	if(isset($_SESSION['user_name']))
+	if(isset($_SESSION['user_id']))
 	{
 
-		$user_name = $_SESSION['user_name'];
-		$query = "select * from users where user_name = '$user_name' limit 1";
+		$id = $_SESSION['user_id'];
+		$query = "select * from users where user_id = '$id' limit 1";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)
@@ -18,9 +18,11 @@ function check_login($user_name)
 			return $user_data;
 		}
 	}
-	header("Location: main.php");
+
+	//redirect to login
+	header("Location: login.php");
 	die;
-	
+
 }
 
 $_SESSION['user_name'] = $user_name;
