@@ -29,7 +29,7 @@ session_start();
 					if($user_data['password'] === $password)
 					{
 
-						$_SESSION['user_id'] = $user_data['user_id'];
+						$_SESSION['user_name'] = $user_data['user_id'];
 						header("Location: ../main.php");
 						die;
 					}
