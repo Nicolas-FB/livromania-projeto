@@ -4,7 +4,8 @@ session_start();
 
 	include('./php/connection.php');
 	include('./php/functions.php');
-
+	
+	$user_data = check_login($con);
 ?>
 
 <!DOCTYPE html>
@@ -82,7 +83,7 @@ session_start();
 		 <?php 
 		 	if(isset($_SESSION['user_id']))
 			{
-				echo "Olá " . $_SESSION['user_name'];
+				echo "Olá " $user_data['user_name'];;
 			}else
 			{
 				echo 'Produtos em destaque';
