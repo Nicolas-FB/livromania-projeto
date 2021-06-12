@@ -81,7 +81,7 @@ session_start();
 		 <?php 
 		 	if(isset($_SESSION['user_id']))
 			{
-				echo "Olá " . $_SESSION['id'];
+				echo "Olá " . $_SESSION['user_id'];
 			}else
 			{
 				echo 'Produtos em destaque';
