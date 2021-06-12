@@ -1,13 +1,13 @@
 <?php
 
 
-function check_login($user_id)
+function check_login($user_name)
 {
 
-	if(isset($_SESSION['user_id']))
+	if(isset($_SESSION['user_name']))
 	{
 
-		$id = $_SESSION['user_id'];
+		$user_name = $_SESSION['user_name'];
 		$query = "select * from users where user_name = '$user_name' limit 1";
 
 		$result = mysqli_query($con,$query);
