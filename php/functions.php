@@ -1,5 +1,7 @@
 <?php
 
+$_SESSION['user_name'] = "user_name';
+
 function check_login($user_id)
 {
 
