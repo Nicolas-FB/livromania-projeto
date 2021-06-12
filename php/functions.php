@@ -1,6 +1,5 @@
 <?php
 
-$_SESSION['user_name'] = "user_name';
 
 function check_login($user_id)
 {
@@ -9,7 +8,7 @@ function check_login($user_id)
 	{
 
 		$id = $_SESSION['user_id'];
-		$query = "select * from users where user_id = '$id' limit 1";
+		$query = "select * from users where user_name = '$user_name' limit 1";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)
@@ -21,8 +20,10 @@ function check_login($user_id)
 	}
 	header("Location: main.php");
 	die;
-
+	
 }
+
+$_SESSION['user_name'] = $user_name;
 
 function random_num($length)
 {
