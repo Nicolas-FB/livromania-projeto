@@ -163,7 +163,7 @@ session_start();
                 <h1>Fale Conosco</h1>
                 <ul class="box">
                     <li>Whatsapp: (11)95784-8652</li>
-                    <li>Telefone: 5854-7843</li>
+                    <li>Telefone: (11) 3056-4320</li>
                     <li>Email: contato@livromania.com</li>
                     <li>Loja Física: Av. Dr. Guilherme Dumont Vilares, 1463</li>
                 </ul>
