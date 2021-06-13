@@ -1,0 +1,10 @@
+HOST DATABASE: https://www.freemysqlhosting.net/account/
+HOST SITE: heroku.com
+
+<!-- Dados para acessar database dos usuários --!>
+
+ACESSAR DATABASE: http://www.phpmyadmin.co
+
+SERVER: sql10.freemysqlhosting.net
+USERNAME: sql10417368
+PASSWORD: IPF9gv1jIf
